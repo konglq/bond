@@ -2,13 +2,17 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.xinhuamm</groupId>
-    <artifactId>bond-parent</artifactId>
+    <artifactId>bond-remote</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>bond-test</artifactId>
-  <packaging>pom</packaging>
-  <name>${project.artifactId}</name>
+  <artifactId>bond-remote-zookeeper</artifactId>
   <properties>
   	<skip_maven_deploy>true</skip_maven_deploy>
   </properties>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.apache.curator</groupId>
+  		<artifactId>curator-recipes</artifactId>
+  	</dependency>
+  </dependencies>
 </project>

@@ -9,5 +9,45 @@
   <modules>
   	<module>bond-test</module>
   	<module>bond-config</module>
+  	<module>bond-registry</module>
+  	<module>bond-remote</module>
+  	<module>bond-container</module>
+  	<module>bond-common</module>
   </modules>
+  <properties>
+  	<spring_version>4.3.11.RELEASE</spring_version>
+  	<zookeeper_version>3.4.10</zookeeper_version>
+  	<curator_version>4.0.0</curator_version>
+  	<slf4j_version>1.7.25</slf4j_version>
+  	<log4j_version>2.9.0</log4j_version>
+  </properties>
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>org.apache.curator</groupId>
+  			<artifactId>curator-recipes</artifactId>
+  			<version>${curator_version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-core</artifactId>
+  			<version>${spring_version}</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-context</artifactId>
+  			<version>${spring_version}</version>
+  		</dependency>
+		<dependency>
+  			<groupId>org.slf4j</groupId>
+  			<artifactId>slf4j-api</artifactId>
+  			<version>${slf4j_version}</version>
+  		</dependency>
+		<dependency>
+  			<groupId>org.apache.logging.log4j</groupId>
+  			<artifactId>log4j-api</artifactId>
+  			<version>${log4j_version}</version>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
 </project>

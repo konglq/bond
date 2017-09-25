@@ -5,10 +5,9 @@
     <artifactId>bond-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>bond-test</artifactId>
+  <artifactId>bond-remote</artifactId>
   <packaging>pom</packaging>
-  <name>${project.artifactId}</name>
-  <properties>
-  	<skip_maven_deploy>true</skip_maven_deploy>
-  </properties>
+  <modules>
+  	<module>bond-remote-zookeeper</module>
+  </modules>
 </project>

@@ -2,13 +2,18 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.xinhuamm</groupId>
-    <artifactId>bond-parent</artifactId>
+    <artifactId>bond-registry</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>bond-test</artifactId>
-  <packaging>pom</packaging>
-  <name>${project.artifactId}</name>
+  <artifactId>bond-registry-zookeeper</artifactId>
   <properties>
-  	<skip_maven_deploy>true</skip_maven_deploy>
+  	<skip_maven_deploy>ture</skip_maven_deploy>
   </properties>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.xinhuamm</groupId>
+  		<artifactId>bond-remote-zookeeper</artifactId>
+  		<version>${project.parent.version}</version>
+  	</dependency>
+  </dependencies>
 </project>

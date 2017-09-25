@@ -5,10 +5,15 @@
     <artifactId>bond-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>bond-test</artifactId>
-  <packaging>pom</packaging>
-  <name>${project.artifactId}</name>
-  <properties>
-  	<skip_maven_deploy>true</skip_maven_deploy>
-  </properties>
+  <artifactId>bond-common</artifactId>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.slf4j</groupId>
+  		<artifactId>slf4j-api</artifactId>
+  	</dependency>
+	<dependency>
+  		<groupId>org.apache.logging.log4j</groupId>
+  		<artifactId>log4j-api</artifactId>
+  	</dependency>
+  </dependencies>
 </project>
